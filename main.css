@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'nhg-roman';
+    src: url('assets/fonts/nhg-55-roman.otf') format('opentype');
+    font-weight: 100; 
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'nhg-italic';
+    src: url('assets/fonts/nhg-56-italic.otf') format('opentype');
+    font-weight: 100; 
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'nhg-medium';
+    src: url('assets/fonts/nhg-65-medium.otf') format('opentype');
+    font-weight: 100; 
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'nhg-mediumitalic';
+    src: url('assets/fonts/nhg-66-mediumitalic.otf') format('opentype');
+    font-weight: 100; 
+    font-style: normal; 
+}
+
+h1{
+font-family: 'nhg-roman';
+}
