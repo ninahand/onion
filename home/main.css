@@ -6,6 +6,13 @@
 }
 
 @font-face {
+    font-family: 'nhg-lightitalic';
+    src: url('assets/fonts/nhg-46-lightitalic.woff.ttf') format('woff');
+    font-weight: 100; 
+    font-style: normal; 
+}
+
+@font-face {
     font-family: 'nhg-roman';
     src: url('assets/fonts/nhg-55-roman.otf') format('opentype');
     font-weight: 100; 
@@ -46,12 +53,20 @@ body {
 }
 
 .heading-container {
-    position: absolute;
+    display: flex;
+    justify-content: center;
     z-index: 1;
     font-family: 'nhg-light';
     font-size: 5rem;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
 }
+
+.heading{
+    position: fixed;
+    cursor: pointer;
+}
+
 
 .background-container {
     position: fixed;
@@ -60,7 +75,6 @@ body {
     height: 100vh;
     top: 0;
     left: 0;
-    overflow: hidden;
 }
 
 .background-container .image {
@@ -68,3 +82,56 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
+.top-container{
+    overflow: auto;
+}
+
+.onion-text-container, .garlic-text-container, .leek-text-container, .chive-text-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 75vh;
+    font-family: 'nhg-light';
+    font-size: 1.4rem;
+    text-align: left;
+    padding-top: 5rem;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+ 
+}
+
+
+
+.left-container::-webkit-scrollbar, .right-container::-webkit-scrollbar, .top-container::-webkit-scrollbar {
+    display: none;
+  }
+
+.left-container, .right-container{
+    width: 25%;
+    overflow: auto;
+}
+
+.spacing-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48%;
+    text-align: center;
+    font-family: 'nhg-lightitalic';
+}
+
+.hidden{
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+/*.hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#text {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out; /* Ensure transition applies both ways */
