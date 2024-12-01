@@ -5,3 +5,4 @@ document.querySelector('.heading-container').addEventListener('click', () => {
     });
 
 });
+
