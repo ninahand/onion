@@ -55,7 +55,7 @@ body {
 .heading-container {
     display: flex;
     justify-content: center;
-    z-index: 1;
+    z-index: 1000;
     font-family: 'nhg-light';
     font-size: 5rem;
     padding-top: 1rem;
@@ -89,9 +89,9 @@ body {
 
 .onion-text-container, .garlic-text-container, .leek-text-container, .chive-text-container{
     display: flex;
+    height: 80vh;
     justify-content: center;
     width: 100%;
-    height: 75vh;
     font-family: 'nhg-light';
     font-size: 1.4rem;
     text-align: left;
@@ -102,12 +102,13 @@ body {
 }
 
 
-
 .left-container::-webkit-scrollbar, .right-container::-webkit-scrollbar, .top-container::-webkit-scrollbar {
     display: none;
   }
 
 .left-container, .right-container{
+    display: flex;
+    align-items: center;
     width: 25%;
     overflow: auto;
 }

@@ -5,4 +5,12 @@ document.querySelector('.heading-container').addEventListener('click', () => {
     });
 
 });
+const video = document.querySelector('video');
 
+document.body.addEventListener('click', () => {
+    if (video.muted) {
+        video.muted = false; 
+        
+    }
+    video.play();
+});
