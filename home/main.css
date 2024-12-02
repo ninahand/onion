@@ -45,11 +45,13 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
     height: 100vh;
     font-family: 'nhg-roman';
     color: white;
     text-align: center;
     overflow: hidden;
+
 }
 
 .heading-container {
@@ -64,7 +66,12 @@ body {
 
 .heading{
     position: fixed;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     cursor: pointer;
+    color: #f5f5dc
+ 
 }
 
 
@@ -85,6 +92,8 @@ body {
 
 .top-container{
     overflow: auto;
+    height: 88vh;
+
 }
 
 .onion-text-container, .garlic-text-container, .leek-text-container, .chive-text-container{
@@ -98,6 +107,7 @@ body {
     padding-top: 5rem;
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
+    color: #f5f5dc
  
 }
 
@@ -125,5 +135,4 @@ body {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
-
 
